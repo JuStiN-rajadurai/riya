@@ -153,10 +153,11 @@ q {
     box-shadow: 0 6px 16px rgba(146, 90, 164, 0.3);
     height: 42px;
     line-height: 42px;
-    border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-ms-border-radius: 0;
+    
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	border-radius: 6px;
 }
 .gradientOne {
     background: rgb(48, 194, 241);
