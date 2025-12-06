@@ -299,6 +299,8 @@ header.main_header {
 
 .main_menu_list li.menu-item {
     margin: 0 0 0 30px;
+	font-weight: 600;
+    font-size: 16px;
 }
 header.dark_bg .main_menu_list li.menu-item a.active {
     color: #7103bc!important;
