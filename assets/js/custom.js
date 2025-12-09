@@ -582,3 +582,112 @@ let footer_contents = `
             </svg>
         </div>`;
 $("footer").append(footer_contents);
+$(document).ready(function () {
+    $(".my_loader").html(`
+        <div class="loader loader-option5">
+            <div class="minimalist-loader">
+                <div class="circle-container">
+                    <div class="outer-circle"></div>
+                    <div class="inner-circle"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="minimalist-text">Riya Enterprises</div>
+            </div>
+        </div>
+
+        <style>
+        .loader-option5 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: #f8f1e5; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .minimalist-loader {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .circle-container {
+            width: 120px;
+            height: 120px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .outer-circle {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #8B4513;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: rotate 1.5s linear infinite;
+        }
+
+        .inner-circle {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 2px solid #D4AF37;
+            border-radius: 50%;
+            border-right-color: transparent;
+            animation: rotate 1s linear infinite reverse;
+        }
+
+        .dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: #8B4513;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .minimalist-text {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: #8B4513;
+            font-weight: 600;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0.7;
+            }
+        }
+        </style>
+    `);
+});
+
+$(window).on('load', function () {
+    setTimeout(function () {
+        $('.my_loader').hide();   
+    }, 1000); 
+});
