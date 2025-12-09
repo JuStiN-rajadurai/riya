@@ -484,7 +484,7 @@ let html_contents = `
                                               Products
                                           </a>
                                           <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                                              <li><a class="dropdown-item" href="#product1">Cow</a></li>
+                                              <li><a class="dropdown-item" href="product-cow.html">Cow</a></li>
                                               <li><a class="dropdown-item" href="#product2">Goat</a></li>
                                               <li><a class="dropdown-item" href="#product3">Sheep</a></li>
                                               <li><a class="dropdown-item" href="#product4">Suede</a></li>
