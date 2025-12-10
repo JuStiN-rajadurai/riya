@@ -484,11 +484,11 @@ let html_contents = `
                                               Products
                                           </a>
                                           <ul class="dropdown-menu" aria-labelledby="productsDropdown">
-                                              <li><a class="dropdown-item" href="product-cow.html">Cow</a></li>
-                                              <li><a class="dropdown-item" href="#product2">Goat</a></li>
-                                              <li><a class="dropdown-item" href="#product3">Sheep</a></li>
-                                              <li><a class="dropdown-item" href="#product4">Suede</a></li>
-                                              <li><a class="dropdown-item" href="#product4">Foils</a></li>
+                                              <li><a class="dropdown-item" style="color:#646464" href="product-cow.html">Cow</a></li>
+                                              <li><a class="dropdown-item" style="color:#646464" href="#product2">Goat</a></li>
+                                              <li><a class="dropdown-item" style="color:#646464" href="#product3">Sheep</a></li>
+                                              <li><a class="dropdown-item" style="color:#646464" href="#product4">Suede</a></li>
+                                              <li><a class="dropdown-item" style="color:#646464" href="#product4">Foils</a></li>
                                           </ul>
                                       </li>
 
@@ -691,3 +691,4 @@ $(window).on('load', function () {
         $('.my_loader').hide();   
     }, 1000); 
 });
+
