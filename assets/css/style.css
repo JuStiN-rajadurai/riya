@@ -2865,7 +2865,7 @@ h1, h2, h3, .title {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s;
-	 animation: pulse 1.5s infinite;
+	 /* animation: pulse 1.5s infinite; */
 }
 
 .whatsapp-float:hover {
