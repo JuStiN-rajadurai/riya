@@ -19,53 +19,50 @@
 
     <!-- Custom Stylesheet -->
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-<!-- Inter Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inter Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Glacial Indifference CDN -->
-<link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
-<style>
-     body {
-    font-family: 'Inter', sans-serif; /* primary */
-}
+    <!-- Glacial Indifference CDN -->
+    <link href="https://fonts.cdnfonts.com/css/glacial-indifference" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* primary */
+        }
 
-h1, h2, h3, .title {
-    font-family: 'Glacial Indifference', sans-serif; /* headings */
-}
-</style>
-<style>
+        h1,
+        h2,
+        h3,
+        .title {
+            font-family: 'Glacial Indifference', sans-serif;
+            /* headings */
+        }
+    </style>
+    <style>
         :root {
-            --primary-color: #343f77; /* Leather brown */
+            --primary-color: #343f77;
+            /* Leather brown */
             --secondary-color: #D2691E;
             --accent-color: #A0522D;
-            --light-color: #c5cdf5; /* Beige */
+            --light-color: #c5cdf5;
+            /* Beige */
             --dark-color: #3E2723;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             line-height: 1.6;
         }
-        
+
         .leather-bg {
-            background-color: var(--light-color);
+
             position: relative;
             overflow: hidden;
         }
-        
-        .leather-bg::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%238B4513" stroke-width="0.5" stroke-opacity="0.1" /></svg>');
-            opacity: 0.3;
-            z-index: 0;
-        }
-        
+
+
+
         .section-title {
             color: var(--primary-color);
             position: relative;
@@ -73,7 +70,7 @@ h1, h2, h3, .title {
             margin-bottom: 30px;
             font-weight: 700;
         }
-        
+
         .section-title::after {
             /* content: "";
             position: absolute;
@@ -83,7 +80,7 @@ h1, h2, h3, .title {
             height: 3px;
             background-color: var(--secondary-color); */
         }
-        
+
         .hero-section {
             background: linear-gradient(rgba(62, 39, 35, 0.8), rgba(62, 39, 35, 0.9)), url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
             background-size: cover;
@@ -92,7 +89,7 @@ h1, h2, h3, .title {
             padding: 120px 0;
             position: relative;
         }
-        
+
         .cert-badge {
             background-color: var(--primary-color);
             color: white;
@@ -102,7 +99,7 @@ h1, h2, h3, .title {
             display: inline-block;
             margin-bottom: 20px;
         }
-        
+
         .feature-card {
             border: none;
             border-radius: 10px;
@@ -111,11 +108,11 @@ h1, h2, h3, .title {
             height: 100%;
             background-color: white;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .feature-icon {
             background-color: var(--light-color);
             width: 70px;
@@ -130,7 +127,7 @@ h1, h2, h3, .title {
             animation: 2.5s anim-effect-front 0s linear infinite;
             -webkit-animation: 2.5s anim-effect-front 0s linear infinite;
         }
-        
+
         .value-card {
             background-color: white;
             border-radius: 10px;
@@ -139,7 +136,7 @@ h1, h2, h3, .title {
             height: 100%;
             border-top: 4px solid var(--primary-color);
         }
-        
+
         .process-step {
             text-align: center;
             padding: 20px;
@@ -150,7 +147,7 @@ h1, h2, h3, .title {
             position: relative;
             overflow: hidden;
         }
-        
+
         .process-step::before {
             content: "";
             position: absolute;
@@ -160,7 +157,7 @@ h1, h2, h3, .title {
             height: 5px;
             background-color: var(--secondary-color);
         }
-        
+
         .step-number {
             font-size: 48px;
             font-weight: 800;
@@ -170,7 +167,7 @@ h1, h2, h3, .title {
             right: 20px;
             opacity: 0.3;
         }
-        
+
         .brand-logo {
             height: 60px;
             margin: 10px 15px;
@@ -178,12 +175,12 @@ h1, h2, h3, .title {
             opacity: 0.7;
             transition: all 0.3s ease;
         }
-        
+
         .brand-logo:hover {
             filter: grayscale(0%);
             opacity: 1;
         }
-        
+
         .accreditation-card {
             background-color: white;
             border-radius: 10px;
@@ -193,35 +190,86 @@ h1, h2, h3, .title {
             height: 100%;
             border: 1px solid rgba(139, 69, 19, 0.1);
         }
-        
+
         .contact-info {
             background-color: var(--primary-color);
             color: white;
             padding: 30px;
             border-radius: 10px;
         }
-        
+
         .footer {
             background-color: var(--dark-color);
             color: white;
             padding: 30px 0;
             margin-top: 50px;
         }
-        
+
         .nav-tabs .nav-link {
             color: var(--dark-color);
             font-weight: 600;
         }
-        
+
         .nav-tabs .nav-link.active {
             background-color: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
         }
-            /* border-bottom: 2px solid #c5c5fc;
-    pdding: 5px;
-    padding: 5px;
-    border-radius: 5px; */
+
+        .expanding-circle .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 10% 20%, rgba(96, 165, 250, 0.4) 2px, transparent 3px),
+                radial-gradient(circle at 90% 40%, rgba(167, 139, 250, 0.4) 2px, transparent 3px),
+                radial-gradient(circle at 40% 80%, rgba(52, 211, 153, 0.4) 2px, transparent 3px),
+                radial-gradient(circle at 70% 10%, rgba(248, 113, 113, 0.4) 2px, transparent 3px);
+            background-size: 200px 200px;
+            z-index: -1;
+            border-radius: 16px;
+            animation: floatDots 20s linear infinite;
+        }
+
+        @keyframes floatDots {
+            0% {
+                background-position: 0 0, 100px 50px, 50px 100px, 150px 30px;
+            }
+
+            100% {
+                background-position: 200px 200px, 300px 250px, 250px 300px, 350px 230px;
+            }
+        }
+
+        .accreditation-card:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.3), transparent);
+            transform: translate(-50%, -50%);
+            animation: expandCircle 6s ease-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes expandCircle {
+            0% {
+                width: 0;
+                height: 0;
+                opacity: 1;
+            }
+
+            100% {
+                   width: 250px;
+    height: 250px;
+    opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -229,45 +277,49 @@ h1, h2, h3, .title {
 
     <!-- Loader -->
     <div class="my_loader">
-       
+
     </div>
 
     <!-- Header -->
     <header class="main_header">
-       
+
     </header>
     <!-- /. Header -->
-<style>
-   .about-banner {
-    background: url('assets/images/template-three/abt.png') center/cover no-repeat;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-}
+    <style>
+        .about-banner {
+            background: url('assets/images/template-three/abt.png') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
 
-.about-banner h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.5);
-}
-
-</style>
+        .about-banner h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
     <section class="about-banner d-flex align-items-center mt-5">
-    <div class="container text-center">
-        <h1>About Us</h1>
-    </div>
-</section>
+        <div class="container text-center">
+            <h1>About Us</h1>
+        </div>
+    </section>
 
 
-<!-- About Section -->
-    <section class="py-5 leather-bg">
+    <!-- About Section -->
+    <section class="py-5 leather-bg expanding-circle">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <h2 class="section-title">Manufactures and Tanners of Finished Leather</h2>
-                    <p class="mb-4">Riya Enterprises is a premier manufacturer of high-quality leather, proudly holding the prestigious <strong>Leather Working Group (LWG) Gold Certification.</strong> Established in 2018, we specialize in sustainable, ethically sourced, and technically advanced leather solutions for the fashion, footwear, and Premium Leather Garments industries worldwide.</p>
-                    <p class="mb-4">With a monthly production capacity of <strong>500,000 sq. ft.</strong>, our focus remains on delivering consistent quality, innovation, and eco-conscious practices that align with global standards.</p>
+                    <p class="mb-4">Riya Enterprises is a premier manufacturer of high-quality leather, proudly holding
+                        the prestigious <strong>Leather Working Group (LWG) Gold Certification.</strong> Established in
+                        2018, we specialize in sustainable, ethically sourced, and technically advanced leather
+                        solutions for the fashion, footwear, and Premium Leather Garments industries worldwide.</p>
+                    <p class="mb-4">With a monthly production capacity of <strong>500,000 sq. ft.</strong>, our focus
+                        remains on delivering consistent quality, innovation, and eco-conscious practices that align
+                        with global standards.</p>
                     <div class="d-flex align-items-center">
                         <div class="me-4">
                             <h3 class="text-primary">500,000+</h3>
@@ -284,17 +336,17 @@ h1, h2, h3, .title {
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="assets/images/template-three/about001.png" 
-                         alt="Leather Production" class="img-fluid rounded shadow">
+                    <img src="assets/images/template-three/about001.png" alt="Leather Production"
+                        class="img-fluid rounded shadow">
                 </div>
             </div>
         </div>
     </section>
 
-     <!-- Why Choose Us Section -->
+    <!-- Why Choose Us Section -->
     <section class="py-5">
         <div class="container">
-            <h2 class="section-title text-center">Why Choose Us?</h2>
+            <h2 class="section-title text-center sec_heading ">Why Choose Us?</h2>
             <div class="row mt-4">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="feature-card p-4 text-center">
@@ -343,7 +395,7 @@ h1, h2, h3, .title {
                 </div>
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="feature-card p-4 text-center">
-                        <div class="feature-icon text-primary" >
+                        <div class="feature-icon text-primary">
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h4>Sustainable Practices</h4>
@@ -353,16 +405,18 @@ h1, h2, h3, .title {
             </div>
         </div>
     </section>
-<!-- Mission & Values Section -->
+    <!-- Mission & Values Section -->
     <section class="py-5 leather-bg">
         <div class="container">
-            <h2 class="section-title">Mission & Core Values</h2>
+            <h2 class="section-title ">Mission & Core Values</h2>
             <div class="row mb-5">
                 <div class="col-lg-10">
-                    <p class="fs-5 mb-4">To produce premium, eco-conscious leather while maintaining the highest standards of quality, transparency, and ethical manufacturing. Our vision is to be recognized as a global leader in responsible leather production.</p>
+                    <p class="fs-5 mb-4">To produce premium, eco-conscious leather while maintaining the highest
+                        standards of quality, transparency, and ethical manufacturing. Our vision is to be recognized as
+                        a global leader in responsible leather production.</p>
                 </div>
             </div>
-            
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="value-card">
@@ -403,11 +457,11 @@ h1, h2, h3, .title {
             </div>
         </div>
     </section>
-<!-- Accreditations -->
+    <!-- Accreditations -->
     <section class="py-5">
         <div class="container">
-            <h2 class="section-title text-center">Recognitions & Accreditations</h2>
-            
+            <h2 class="section-title text-center sec_heading ">Recognitions & Accreditations</h2>
+
             <div class="row mt-4 justify-content-center">
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="accreditation-card">
@@ -449,12 +503,13 @@ h1, h2, h3, .title {
         </div>
     </section>
 
-     <!-- Brand Partnerships -->
+    <!-- Brand Partnerships -->
     <section class="py-5 leather-bg">
         <div class="container">
             <h2 class="section-title">Global Brand Partnerships</h2>
-            <p class="mb-5">We are proud suppliers to globally recognized brands, built on consistent quality, sustainable practices, and reliable delivery.</p>
-            
+            <p class="mb-5">We are proud suppliers to globally recognized brands, built on consistent quality,
+                sustainable practices, and reliable delivery.</p>
+
             <div class="row justify-content-center align-items-center">
                 <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
                     <div class="brand-logo-container">
@@ -491,20 +546,21 @@ h1, h2, h3, .title {
     </section>
     <!-- Footer Section -->
     <footer Class="main_footer wow fadeInUp">
-       
+
     </footer><!-- Footer Section -->
- 
+
     <a href="javascript:void(0);" class="scrollUp"><i class="fas fa-chevron-up"></i></a>
-<a href="https://wa.me/6383842680?text=Hello%2C%20I%20have%20an%20enquiry%20about%20your%20products." target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
-</a>
+    <a href="https://wa.me/6383842680?text=Hello%2C%20I%20have%20an%20enquiry%20about%20your%20products."
+        target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <!-- The Modal -->
     <div id="joiningPopup" class="white-popup mfp-hide custom_mfp_popup">
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header text-center">
                 <h3 class="modal-title">Join Us Now</h3>
-                 
+
                 <button title="Close (Esc)" type="button" class="mfp-close">×</button>
             </div>
             <!-- Modal body -->
@@ -554,7 +610,6 @@ h1, h2, h3, .title {
     <script src="assets/js/jquery.mixitup.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
-
 
 
 </html>
